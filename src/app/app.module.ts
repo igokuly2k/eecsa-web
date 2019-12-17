@@ -14,6 +14,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WhoComponent } from './who/who.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { from } from 'rxjs';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { from } from 'rxjs';
     ServicesComponent,
     ProductsComponent,
     WhoComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
