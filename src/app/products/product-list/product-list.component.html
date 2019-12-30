@@ -1,0 +1,5 @@
+<div class="list-group">
+    <a style="cursor: pointer;" [routerLink]="[i]" routerLinkActive="active" class="list-group-item clearfix" *ngFor="let product of products; let i=index">
+        <p class="list-group-item-text">{{ product.name }}</p>
+    </a>
+</div>

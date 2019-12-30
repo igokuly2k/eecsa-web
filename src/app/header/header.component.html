@@ -1,6 +1,5 @@
-<div class="jumbotron">
-    <h1 class="text-center">EECSA</h1>
-</div>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<div id="animated-example" class="animated wobble" onClick="window.location.reload();"></div>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <span class="navbar-brand">
       <a class="nav-link" style="cursor: pointer" role="button" routerLink="/" routerLinkActive="active">Home</a>
@@ -12,22 +11,22 @@
     <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" style="cursor: pointer" role="button" routerLink="/products">
+                <a class="nav-link" style="cursor: pointer" role="button" routerLink="/products" (click)="collapsed = !collapsed">
                 Products
               </a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" style="cursor: pointer" role="button" routerLink="/services">
+            <li class=" nav-item " routerLinkActive="active ">
+                <a class="nav-link " style="cursor: pointer " role="button " routerLink="/services" (click)="collapsed = !collapsed">
                 Services
               </a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" style="cursor: pointer" role="button" routerLink="/jobs">
+            <li class="nav-item " routerLinkActive="active ">
+                <a class="nav-link " style="cursor: pointer " role="button " routerLink="/jobs" (click)="collapsed = !collapsed">
                 Jobs
               </a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" style="cursor: pointer" role="button" routerLink="/contact">
+            <li class="nav-item " routerLinkActive="active ">
+                <a class="nav-link " style="cursor: pointer " role="button " routerLink="/contact" (click)="collapsed = !collapsed">
                                 Contact Us
                             </a>
             </li>

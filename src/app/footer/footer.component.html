@@ -7,11 +7,8 @@
                 <li class="nav-item">
                     <p>Products</p>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ipsum</a>
+                <li class="nav-item" *ngFor="let product of products; let i=index" style="cursor: pointer;">
+                    <a class="nav-link" [routerLink]="['/products/'+i]">{{ product.name }}</a>
                 </li>
             </ul>
         </div>
@@ -20,11 +17,8 @@
                 <li class="nav-item">
                     <p>Services</p>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ipsum</a>
+                <li class="nav-item" *ngFor="let service of services; let i=index" style="cursor: pointer;">
+                    <a class="nav-link" [routerLink]="['/services/'+i]">{{ service.name }}</a>
                 </li>
             </ul>
         </div>
@@ -33,11 +27,8 @@
                 <li class="nav-item">
                     <p>Jobs</p>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ipsum</a>
+                <li class="nav-item" *ngFor="let job of jobs; let i=index" style="cursor: pointer;">
+                    <a class="nav-link" [routerLink]="['/jobs/'+i]">{{ job.name }}</a>
                 </li>
             </ul>
         </div>

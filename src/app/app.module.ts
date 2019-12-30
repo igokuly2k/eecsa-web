@@ -16,6 +16,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { from } from 'rxjs';
 import { FooterComponent } from './footer/footer.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { ServiceDetailComponent } from './services/service-detail/service-detail.component';
+import { ServiceListComponent } from './services/service-list/service-list.component';
+import { JobListComponent } from './jobs/job-list/job-list.component';
+import { JobDetailComponent } from './jobs/job-detail/job-detail.component';
+import { ProductStartComponent } from './products/product-start/product-start.component';
+import { ServiceStartComponent } from './services/service-start/service-start.component';
+import { JobStartComponent } from './jobs/job-start/job-start.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +35,16 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ProductsComponent,
     WhoComponent,
     NotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    ProductListComponent,
+    ProductDetailComponent,
+    ServiceDetailComponent,
+    ServiceListComponent,
+    JobListComponent,
+    JobDetailComponent,
+    ProductStartComponent,
+    ServiceStartComponent,
+    JobStartComponent
   ],
   imports: [
     BrowserModule,
